@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .rock {
+        @apply absolute rounded-full w-[8rem] h-[8rem] z-40 bg-gradient-to-b from-[#dd405d] to-[#dc2e4e] group-hover:from-[#f06981]  group-hover:to-[#df516b] group-hover:shadow-2xl group-hover:shadow-[#dd405d]/50;
+    }
+    .rock-dark {
+        @apply absolute rounded-full w-[8rem] h-[8rem] mt-1.5 bg-[#9f1634]  group-hover:bg-[#a72b46] group-hover:shadow-2xl group-hover:shadow-[#dd405d]/50;
+    }
+    .paper {
+        @apply absolute rounded-full w-[8rem] h-[8rem] z-40 bg-gradient-to-b from-[#5671f5] to-[#4865f4] group-hover:from-[#7d91f8]  group-hover:to-[#647cf7] group-hover:shadow-2xl group-hover:shadow-[#5671f5]/50;
+    }
+    .paper-dark {
+        @apply absolute rounded-full w-[8rem] h-[8rem] mt-1.5 bg-[#2845c3] group-hover:bg-[#4058c5] group-hover:shadow-2xl group-hover:shadow-[#5671f5]/50;
+    }
+    .scissors {
+        @apply absolute rounded-full w-[8rem] h-[8rem] z-40 bg-gradient-to-b from-[#eca922] to-[#ec9e0e] group-hover:from-[#ebb549]  group-hover:to-[#d19f42] group-hover:shadow-2xl group-hover:shadow-[#eca922]/50;
+    }
+    .scissors-dark {
+        @apply absolute rounded-full w-[8rem] h-[8rem] mt-1.5 bg-[#c76d16] group-hover:bg-[#c7772d] group-hover:shadow-2xl group-hover:shadow-[#eca922]/50;
+    }
+}
