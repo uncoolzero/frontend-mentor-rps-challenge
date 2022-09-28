@@ -14,8 +14,8 @@ const Home = () => {
 
   const defaultTrianglePos = "ml-[2rem] z-1"
 
-  const showdownScreenPlayerSelectPos = "absolute -ml-2 -mt-10 1xl:-ml-[20rem] 1xl:scale-[250%] transition-all ease-in-out"
-  const showdownScreenHouseSelectPos = "absolute ml-[11rem] -mt-10 1xl:ml-[21rem] 1xl:scale-[250%] transition-all ease-in-out"
+  const showdownScreenPlayerSelectPos = "absolute -ml-2 -mt-10 1xl:-ml-[20rem] 1xl:scale-[251%] transition-all ease-in-out"
+  const showdownScreenHouseSelectPos = "absolute ml-[11rem] -mt-10 1xl:ml-[21rem] 1xl:scale-[251%] transition-all ease-in-out"
 
   const defaultYouPickedTextVis = "text-white absolute z-[90] mt-[7rem] ml-[0.75rem] 1xl:-mt-[6rem] 1xl:-ml-[15rem] 1xl:text-2xl tracking-widest"
   const defaultHousePickedTextVis = "text-white absolute z-[90] mt-[7rem] ml-[10.5rem]  1xl:-mt-[6rem] 1xl:ml-[24rem] 1xl:text-2xl tracking-widest"
