@@ -43,7 +43,7 @@ Users should be able to:
 
 ### What I learned
 
-Working from mobile-first! Thanks to Tailwind this was extremely easy, I went from the mobile UI to the desktop version in a few minutes only using CSS. Very cool! Despite it not being part of the challenge itself, I wanted to give it some smooth animations to make things flow nicely, I'm quite pleased with how they turned out, I could've done more of course, but at some point it starts to get in the way of the user experience. I'm also quite happy with how reusable the buttons are, adding the optional game mode would be quite simple in that regard.
+Improving my skills in the mobile-first workflow! Thanks to Tailwind this was extremely easy, I went from the mobile UI to the desktop version in a few minutes only using CSS. Very cool! Despite it not being part of the challenge itself, I wanted to give it some smooth animations to make things flow nicely, I'm quite pleased with how they turned out, I could've done more of course, but at some point it starts to get in the way of the user experience. I'm also quite happy with how reusable the buttons are, adding the optional game mode would be quite simple in that regard.
 
 ### Continued development
 
