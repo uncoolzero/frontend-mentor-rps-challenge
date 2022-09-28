@@ -11,6 +11,9 @@ module.exports = {
       },
       fontFamily: {
         custom: ["Barlow Semi Condensed", "sans-serif"]
+      },
+      scale: {
+        '250': '2.50',
       }
     },
     screens: {

@@ -14,8 +14,8 @@ const Home = () => {
 
   const defaultTrianglePos = "ml-[2rem] z-1"
 
-  const showdownScreenPlayerSelectPos = "absolute -ml-2 -mt-10 1xl:-ml-[20rem] 1xl:scale-[251%] transition-all ease-in-out"
-  const showdownScreenHouseSelectPos = "absolute ml-[11rem] -mt-10 1xl:ml-[21rem] 1xl:scale-[251%] transition-all ease-in-out"
+  const showdownScreenPlayerSelectPos = "absolute -ml-2 -mt-10 1xl:-ml-[20rem] transition-all 1xl:scale-250 ease-in-out"
+  const showdownScreenHouseSelectPos = "absolute ml-[11rem] -mt-10 1xl:ml-[21rem] transition-all 1xl:scale-250 ease-in-out"
 
   const defaultYouPickedTextVis = "text-white absolute z-[90] mt-[7rem] ml-[0.75rem] 1xl:-mt-[6rem] 1xl:-ml-[15rem] 1xl:text-2xl tracking-widest"
   const defaultHousePickedTextVis = "text-white absolute z-[90] mt-[7rem] ml-[10.5rem]  1xl:-mt-[6rem] 1xl:ml-[24rem] 1xl:text-2xl tracking-widest"
@@ -204,7 +204,7 @@ const Home = () => {
     <div>
 
       <div className={rulesModalStyle}>
-        <div className="px-8 py-4 flex flex-col 1xl:absolute 1xl:right-[36vw] 1xl:top-[23vh] gap-y-[6.25rem]">
+        <div className="px-8 py-4 flex flex-col 1xl:absolute 1xl:right-[40vw] 1xl:top-[23vh] gap-y-[6.25rem]">
           <div className="flex justify-center 1xl:absolute 1xl:pt-4 1xl:pl-6 1xl:text-2xl pt-[4rem] text-lg font-bold text-[#3b4363]">
               RULES
           </div>
@@ -279,7 +279,7 @@ const Home = () => {
 
                   {/* WIN/DEFEAT CIRCLE */}
                 
-                  <div className={showdownScreenPlayerSelectPos}>
+                  <div className={`${showdownScreenPlayerSelectPos} 1xl:scale-250`}>
                     <div className="relative">
                       <div className={`absolute -ml-[1rem] ${circleScales[0]} -mt-[1rem] bg-white/5 w-[10rem] h-[10rem] transition-all ease-in-out rounded-full z-[5]`}/>
                       <div className={`absolute -ml-[1rem] ${circleScales[1]} -mt-[1rem] bg-white/5 w-[10rem] h-[10rem] transition-all ease-in-out rounded-full z-[4]`}/>
@@ -287,7 +287,7 @@ const Home = () => {
                     </div>
                   </div>
                   
-                  <div className={showdownScreenHouseSelectPos}>
+                  <div className={`${showdownScreenHouseSelectPos} 1xl:scale-250`}>
                     <div className="relative">
                       <div className={`absolute -ml-[1rem] ${circleScales[3]} -mt-[1rem] bg-white/5 w-[10rem] h-[10rem] transition-all ease-in-out rounded-full z-[5]`}/>
                       <div className={`absolute -ml-[1rem] ${circleScales[4]} -mt-[1rem] bg-white/5 w-[10rem] h-[10rem] transition-all ease-in-out rounded-full z-[4]`}/>
@@ -304,7 +304,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className={`${resultBoxVis} justify-center transition-all ease-in-out -mt-[8.75rem] 1xl:absolute 1xl:bottom-[16rem] 1xl:right-[41.5vw] pb-4 text-white`}>
+          <div className={`${resultBoxVis} justify-center transition-all ease-in-out -mt-[8.75rem] 1xl:absolute 1xl:bottom-[16rem] 1xl:right-[43vw] pb-4 text-white`}>
             <div className="w-[14rem]">
 
                 <div className="text-[55px] flex justify-center">{resultBoxText}</div>
