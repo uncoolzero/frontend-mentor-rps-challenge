@@ -5,12 +5,12 @@ const Home = () => {
 
   const options = ["rock", "paper", "scissors"]
   
-  const defaultRockPos = "absolute ml-[5.25rem] mt-[7rem] 1xl:mt-[8rem] 1xl:ml-[3.5rem] transition-all ease-in-out"
-  const defaultPaperPos = "absolute ml-0 -mt-10 1xl:-ml-[5rem] 1xl:-mt-[7rem] transition-all ease-in-out"
-  const defaultScissorsPos = "absolute ml-[10.5rem] -mt-10 1xl:ml-[12.5rem] 1xl:-mt-[7rem] transition-all ease-in-out"
-  const defaultEmptyButtonPos = "hidden absolute ml-[10.5rem] -mt-10 transition-all ease-in-out"
+  const defaultRockPos = "absolute ml-[5.25rem] mt-[7rem] 1xl:mt-[8rem] 1xl:ml-[3.5rem] 1xl:scale-[150%] transition-all ease-in-out"
+  const defaultPaperPos = "absolute ml-0 -mt-10 1xl:-ml-[5rem] 1xl:-mt-[7rem] 1xl:scale-[150%] transition-all ease-in-out"
+  const defaultScissorsPos = "absolute ml-[10.5rem] -mt-10 1xl:ml-[12.5rem] 1xl:-mt-[7rem] 1xl:scale-[150%] transition-all ease-in-out"
+  const defaultEmptyButtonPos = "hidden absolute ml-[10.5rem] -mt-10 1xl:scale-[150%] transition-all ease-in-out"
 
-  const defaultHouseSelectButtonPos = "hidden absolute ml-[10.5rem] -mt-10 transition-all ease-in-out"
+  const defaultHouseSelectButtonPos = "hidden absolute ml-[10.5rem] -mt-10 1xl:scale-[150%] transition-all ease-in-out"
 
   const defaultTrianglePos = "ml-[2rem] z-1"
 
@@ -18,14 +18,14 @@ const Home = () => {
   const showdownScreenHouseSelectPos = "absolute ml-[11rem] -mt-10 1xl:ml-[21rem] transition-all 1xl:scale-250 ease-in-out"
 
   const defaultYouPickedTextVis = "text-white absolute z-[90] mt-[7rem] ml-[0.75rem] 1xl:-mt-[6rem] 1xl:-ml-[15rem] 1xl:text-2xl tracking-widest"
-  const defaultHousePickedTextVis = "text-white absolute z-[90] mt-[7rem] ml-[10.5rem]  1xl:-mt-[6rem] 1xl:ml-[24rem] 1xl:text-2xl tracking-widest"
+  const defaultHousePickedTextVis = "text-white absolute z-[90] mt-[7rem] ml-[10.5rem]  1xl:-mt-[6rem] 1xl:ml-[24rem] 1xl:text-2xl tracking-widest whitespace-nowrap"
 
   const defaultResultBoxVis = "hidden"
   const defaultResultBoxText = "YOU WIN"
   
   const defaultCircleScales = ["scale-[0%]", "scale-[0%]", "scale-[0%]", "scale-[0%]", "scale-[0%]", "scale-[0%]"]
-  const winCircleScales = ["scale-[90%]", "scale-[100%]", "scale-[115%]", "scale-[0%]", "scale-[0%]", "scale-[0%]"]
-  const loseCircleScales = ["scale-[0%]", "scale-[0%]", "scale-[0%]", "scale-[90%]", "scale-[100%]", "scale-[115%]"]
+  const winCircleScales = ["scale-[90%]", "scale-[100%]", "scale-[110%]", "scale-[0%]", "scale-[0%]", "scale-[0%]"]
+  const loseCircleScales = ["scale-[0%]", "scale-[0%]", "scale-[0%]", "scale-[90%]", "scale-[100%]", "scale-[110%]"]
 
   const [showRules, setShowRules] = useState(false)
   const [phase, setPhase] = useState(1)
@@ -246,26 +246,26 @@ const Home = () => {
           </div>
 
           <div className="flex justify-center basis-10/12">
-            <div className="flex items-center -ml-[2.1rem]">
+            <div className="flex items-center justify-center -ml-[2.1rem] 1xl:pt-14 1xl:scale-90">
               {/*RPS*/}
               <div>
-                  <div onClick={() => setPlayerSelection("paper")} className={`1xl:scale-[150%] ${paperButtonPos}  1xl:z-[10]`}>
+                  <div onClick={() => setPlayerSelection("paper")} className={`${paperButtonPos} z-[10]`}>
                       <Button type="paper" playerButton={true} auxColor="paper-dark"/>
                   </div>
 
-                  <div onClick={() => setPlayerSelection("scissors")} className={`1xl:scale-[150%] ${scissorsButtonPos}  1xl:z-[10]`}>
+                  <div onClick={() => setPlayerSelection("scissors")} className={`${scissorsButtonPos} z-[10]`}>
                       <Button type="scissors" playerButton={true} auxColor="scissors-dark"/>
                   </div>
 
-                  <div onClick={() => setPlayerSelection("rock")} className={`1xl:scale-[150%] ${rockButtonPos}  1xl:z-[10]`}>
+                  <div onClick={() => setPlayerSelection("rock")} className={`${rockButtonPos} z-[10]`}>
                       <Button type="rock" playerButton={true} auxColor="rock-dark"/>
                   </div>
 
-                  <div className={`${houseSelectButtonPos} 1xl:scale-[150%] 1xl:z-[10]`}>
+                  <div className={`${houseSelectButtonPos} z-[10]`}>
                       <Button type={houseSelection} playerButton={false} auxColor={`${houseSelection}-dark`}/>
                   </div>
 
-                  <div className={emptyButtonPos}>
+                  <div className={`${emptyButtonPos}`}>
                     <div className="absolute rounded-full w-[8rem] h-[8rem] bg-[#182842]"/>
                   </div>
 
@@ -279,7 +279,7 @@ const Home = () => {
 
                   {/* WIN/DEFEAT CIRCLE */}
                 
-                  <div className={`${showdownScreenPlayerSelectPos} 1xl:scale-250`}>
+                  <div className={`${showdownScreenPlayerSelectPos}`}>
                     <div className="relative">
                       <div className={`absolute -ml-[1rem] ${circleScales[0]} -mt-[1rem] bg-white/5 w-[10rem] h-[10rem] transition-all ease-in-out rounded-full z-[5]`}/>
                       <div className={`absolute -ml-[1rem] ${circleScales[1]} -mt-[1rem] bg-white/5 w-[10rem] h-[10rem] transition-all ease-in-out rounded-full z-[4]`}/>
@@ -287,7 +287,7 @@ const Home = () => {
                     </div>
                   </div>
                   
-                  <div className={`${showdownScreenHouseSelectPos} 1xl:scale-250`}>
+                  <div className={`${showdownScreenHouseSelectPos}`}>
                     <div className="relative">
                       <div className={`absolute -ml-[1rem] ${circleScales[3]} -mt-[1rem] bg-white/5 w-[10rem] h-[10rem] transition-all ease-in-out rounded-full z-[5]`}/>
                       <div className={`absolute -ml-[1rem] ${circleScales[4]} -mt-[1rem] bg-white/5 w-[10rem] h-[10rem] transition-all ease-in-out rounded-full z-[4]`}/>
@@ -304,7 +304,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className={`${resultBoxVis} justify-center transition-all ease-in-out -mt-[8.75rem] 1xl:absolute 1xl:bottom-[16rem] 1xl:right-[43vw] pb-4 text-white`}>
+          <div className={`${resultBoxVis} justify-center transition-all ease-in-out -mt-[8.75rem] 1xl:absolute 1xl:top-[70vh] 1xl:left-[44.5vw] pb-4 text-white`}>
             <div className="w-[14rem]">
 
                 <div className="text-[55px] flex justify-center">{resultBoxText}</div>
