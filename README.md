@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://rps-challenge-ucz.netlify.app/)
+- Live Site URL: [RPS Challenge Solution](https://rps-challenge-ucz.netlify.app/)
 
 ## My process
 
@@ -51,5 +51,5 @@ My understanding of CSS still isn't perfect, sometimes it can take a while to ge
 
 ## Author
 
-- Frontend Mentor - [@uncoolzero](https://www.frontendmentor.io/profile/uncoolzero)
+- Frontend Mentor - [@uncoolzero](https://www.frontendmentor.io/profile/astroboard)
 - Twitter - [@uncoolzero](https://www.twitter.com/uncoolzero)
